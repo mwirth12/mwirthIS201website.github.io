@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fascinating World of Cats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="professional_page.html">Professional Page</a>
+            <a href="#cat-info">Cat Information</a>
+            <a href="#cat-gallery">Cat Gallery</a>
+            <a href="#tableau-viz">Cat Visualization</a>
+        </nav>
+    </header>
+
+    <div id="cat-info">
+        <h1>The Wonderful World of Cats</h1>
+        
+        <ol>
+            <li>Cat Breeds
+                <ul>
+                    <li>Persian</li>
+                    <li>Siamese</li>
+                    <li>Maine Coon</li>
+                </ul>
+            </li>
+        </ol>
+        <div id="cat-gallery">
+            <h2>Cat Gallery</h2>
+            <h1>Cat Picture and Cat Youtube Video!</h1>
+        <img src="2149169892.webp" alt="Cute Cat" style="max-width: 50%; margin: 20px auto; display: block; border-radius: 8px;">
+    </div>
+
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/J---aiyznGQ" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="margin: 20px auto; display: block; border: 1px solid white;">
+        </iframe>
+    </div>
+
+    <div id="tableau-viz">
+        <h2>Cat Population Visualization</h2>
+        <div class='tableauPlaceholder' id='viz1702435932207' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Cat Population Dashboard ' 
+                         src='https://public.tableau.com/static/images/Ca/CatPopulation/Dashboard1/1_rss.png' 
+                         style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> 
+                <param name='name' value='CatPopulation&#47;Dashboard1' />
+            </object>
+        </div>
+    </div>
+
+    <footer>
+        <div class="navigation-buttons">
+            <button onclick="location.href='joke_generator.html';">Joke Generator</button>
+            <button onclick="location.href='professional_page.html';">Professional Page</button>
+        </div>
+    </footer>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1702435932207');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</body>
+</html>
